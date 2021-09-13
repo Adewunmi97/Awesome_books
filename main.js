@@ -6,10 +6,12 @@ class Storage {
   constructor() {
     this.collection = [];
   }
+
   static addCollection(newBook) {
     this.collection.push(newBook);
     localStorage.setItem('collection', JSON.stringify(this.collection));
   }
+
   static removeFromCollection(target) {
     const removeBook = target.previousElementSibling.firstElementChild.textContent;
     this.collection.filter((book, index) => {
@@ -20,6 +22,7 @@ class Storage {
     });
     localStorage.setItem('collection', JSON.stringify(this.collection));
   }
+
   static getBooksFromStorage() {
     if (localStorage.getItem('collection') === null) {
       this.collection = [];
