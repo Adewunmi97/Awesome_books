@@ -36,26 +36,26 @@ function Book(title, author) {
   this.title = title;
   this.author = author;
 }
-function UI() {}
+function UI() { }
 UI.prototype.addBookToUI = function (newBook) {
   Storage.collection.forEach((book, index) => {
     if (book.title === newBook.title) {
       if (index % 2 === 0) {
         bookList.innerHTML += `
-        <li class='book list-group-item-secondary d-flex flex-row justify-content-between py-3'>
-          <div class='d-flex flex-row ms-5'>
-            <p class='book-title margin-sm fs-5'>${newBook.title}</p>
-            <p class='book-author margin-sm fs-5'>&nbsp by ${newBook.author}</p>
+        <li class='book'>
+          <div >
+            <p class='book-title'>${newBook.title}</p>
+            <p class='book-author'>&nbsp by ${newBook.author}</p>
           </div>
           <button class='remove btn btn-danger me-5' type='button'>Remove</button>
         </li>
         `;
       } else {
         bookList.innerHTML += `
-        <li class='book list-group-item-light d-flex flex-row justify-content-between py-3'>
-          <div class='d-flex flex-row ms-5'>
-            <p class='book-title margin-sm fs-5'>${newBook.title}</p>
-            <p class='book-author margin-sm fs-5'>&nbsp by ${newBook.author}</p>
+        <li class='book'>
+          <div>
+            <p class='book-title'>${newBook.title}</p>
+            <p class='book-author'>&nbsp by ${newBook.author}</p>
           </div>
           <button class='remove btn btn-danger me-5' type='button'>Remove</button>
         </li>
