@@ -29,7 +29,7 @@
 
 * To get the content of this project locally you need to run this command in your terminal:
 
-- `https://github.com/tacettinkustu/microverse-awesome-books.git`
+- `https://github.com/Adewunmi97/Awesome_books/tree/milestone2`
 
 
 ## Authors
