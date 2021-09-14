@@ -1,7 +1,7 @@
-# Project Name
+## Project Name
 
 Awesome_books
-A project in Microverse program 
+A project of Microverse program 
 
 ## Built With
 HTML Javascript
@@ -28,4 +28,6 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 ## 📝 License
+This project is MIT licensed.
+
 
