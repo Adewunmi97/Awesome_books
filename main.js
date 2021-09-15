@@ -42,23 +42,25 @@ UI.prototype.addBookToUI = function (newBook) {
     if (book.title === newBook.title) {
       if (index % 2 === 0) {
         bookList.innerHTML += `
-        <li class='book'>
-          <div >
-            <p class='book-title'>${newBook.title}</p>
-            <p class='book-author'>&nbsp by ${newBook.author}</p>
+        <li class='book d-flex flex-row justify-content-between'>
+          <div>
+            <span class='book-title'>${newBook.title}</span>
+            <span class='book-author'>&nbsp by ${newBook.author}</span>
           </div>
           <button class='remove btn btn-danger me-5' type='button'>Remove</button>
         </li>
+        <br>
         `;
       } else {
         bookList.innerHTML += `
-        <li class='book'>
+        <li class='book d-flex flex-row justify-content-between'>
           <div>
-            <p class='book-title'>${newBook.title}</p>
-            <p class='book-author'>&nbsp by ${newBook.author}</p>
+            <span class='book-title'>${newBook.title}</span>
+            <span class='book-author'>&nbsp by ${newBook.author}</span>
           </div>
           <button class='remove btn btn-danger me-5' type='button'>Remove</button>
         </li>
+        <br>
         `;
       }
     }
