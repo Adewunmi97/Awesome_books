@@ -49,7 +49,7 @@ UI.prototype.addBookToUI = function (newBook) {
           </div>
           <button class='remove btn btn-danger me-5' type='button'>Remove</button>
         </li>
-        <br>
+        <hr>
         `;
       } else {
         bookList.innerHTML += `
@@ -60,7 +60,7 @@ UI.prototype.addBookToUI = function (newBook) {
           </div>
           <button class='remove btn btn-danger me-5' type='button'>Remove</button>
         </li>
-        <br>
+        <hr>
         `;
       }
     }
