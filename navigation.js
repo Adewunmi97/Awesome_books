@@ -21,32 +21,12 @@ function checkTime(i) {
   return i;
 }
 
-function startTime() {
-  const monthNames = [
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-    'July',
-    'August',
-    'September',
-    'October',
-    'November',
-    'December',
-  ];
-  const today = new Date();
-  const k = today.getMonth();
-  const l = today.getDate();
-  const n = today.getFullYear();
-  const h = today.getHours();
-  let m = today.getMinutes();
-  let s = today.getSeconds();
-  m = checkTime(m);
-  s = checkTime(s);
-  document.getElementById('time').innerHTML = `${monthNames[k]} ${l} ${n}, ${h}:${m}:${s}`;
-  setTimeout(startTime, 1000);
+var DateTime = luxon.DateTime;
+
+function clock() {
+  const now = DateTime.local().toLocaleString(DateTime.DATETIME_MED_WITH_SECONDS);
+  let timeHtml = `<p>${now}</p>`;
+  document.querySelector("#time").innerHTML = timeHtml;
 }
 
-startTime();
+setInterval(clock, 1000);
