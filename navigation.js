@@ -14,19 +14,12 @@ links.forEach((link) => {
   });
 });
 
-function checkTime(i) {
-  if (i < 10) {
-    i = `0${i}`;
-  }
-  return i;
-}
-
 var DateTime = luxon.DateTime;
-
 function clock() {
+
   const now = DateTime.local().toLocaleString(DateTime.DATETIME_MED_WITH_SECONDS);
-  let timeHtml = `<p>${now}</p>`;
-  document.querySelector("#time").innerHTML = timeHtml;
+  const timeHtml = `<p>${now}</p>`;
+  document.querySelector('#time').innerHTML = timeHtml;
 }
 
 setInterval(clock, 1000);

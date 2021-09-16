@@ -1,0 +1,29 @@
+{
+  "name": "Awesome_books",
+  "version": "1.0.0",
+  "description": "> This is a project that displays a list of books and allows you to add and remove books from that list.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adewunmi97/Awesome_books.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Adewunmi97/Awesome_books/issues"
+  },
+  "homepage": "https://github.com/Adewunmi97/Awesome_books#readme",
+  "dependencies": {
+    "luxon": "^2.0.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.24.2"
+  }
+}
